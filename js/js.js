@@ -30,4 +30,10 @@ function calProp() {
     }
 }
 
+function borrar() {
+    $('[name="numero1"]').val('');
+    $('[name="personas"]').val('');
+    $('.mas-grande').html('');
+
+}
 //window.onclick = calProp(num1, num2, valor);
