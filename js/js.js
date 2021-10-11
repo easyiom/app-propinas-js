@@ -12,3 +12,22 @@ window.onload = function() {
         $('.containerForm button').css({ 'opacity': '1', 'transition': '0s all' });
     }
 }
+
+
+
+function calProp() {
+    let a = $('[name="numero1"]').val(),
+        b = $('[name="personas"]').val(),
+        c = $('[name="valoracion"]').val();
+    let result
+    if (isNaN(a) == true || isNaN(b) == true || a == 0 || b == 0) {
+        swal('Error', 'Introduce valores validos', 'error')
+    } else {
+        result = (a * c) / b;
+        $('.mas-grande').html(result);
+        console.log(result)
+        return result;
+    }
+}
+
+//window.onclick = calProp(num1, num2, valor);
